@@ -1,0 +1,254 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+%          Now It's Chai's 
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Large\textbf{\scshape Chaidhat Chaimongkol}} \\ \vspace{1pt}
+    \small (424) 535-9679 $|$ \href{mailto:x@x.com}{\underline{chaimongkol@ucla.edu}} $|$ 
+    \href{https://linkedin.com/in/chaidhat}{\underline{linkedin.com/in/chaidhat}} $|$
+    \href{https://github.com/chaidhat}{\underline{github.com/chaidhat}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California, Los Angeles}{Los Angeles, CA}
+      {B.S. in Computer Engineering, Minor in Entrepreneurship}{Expected June 2026}
+    \resumeItem{\textit{Honors}: Dean's List (2x) $|$ \textit{Scholarships}: Boeing Scholarship (2023-24)}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineering Intern}{Jul 2025 -- Present}
+      {expand.ai (YC S24)}{San Francisco, CA}
+      \resumeItemListStart
+        \resumeItem{Building a web scraper}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Founder \& Lead Software Engineer}{Jul 2022 -- Present}
+      {Scholarity Co., Ltd. (\href{https://scholarity.io}{https://scholarity.io})}{Bangkok, Thailand}
+      \resumeItemListStart
+        \resumeItem{Secured contract with a Fortune 500 client and 3 others; \$24,000 annual recurring revenue}
+        \resumeItem{Built and deployed a full-stack E-learning platform (Dart, React, TypeScript, MySQL) with 50,000+ lines of code.}
+        \resumeItem{Optimized backend with concurrency, algorithmic optimizations; reduced API response time by 72x since launch.}
+        \resumeItem{Finalist at Google-backed hackathon; presented at Google LAX Office to business leaders and executives.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+
+    \resumeSubheading
+      {Undergraduate Researcher, Website Lead}{May 2024 -- Present}
+      {Di Carlo Lab}{Los Angeles, CA}
+      \resumeItemListStart
+        \resumeItem{Created Python-based front-end UI for a robotic digital PCR system, exhibted at SLAS 2025 Biotech Conference.}
+        \resumeItem{Integrated Wi-Fi and Bluetooth connectivity to control Raspberry-Pi based pumps and enable remote diagnostics.}
+        \resumeItem{Programmed React/NextJS website to support seed funding for commercialization of the robotic system.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Undergraduate Researcher}{Mar 2025 -- Present}
+      {Yijia Xiao Lab}{Los Angeles, CA}
+      \resumeItemListStart
+        \resumeItem{Developing Large Language Models (LLMs) using LangChain to analyze financial market trends.}
+        \resumeItem{Working with research team to integrate Model Control Protocol to execute trades autonomously.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineering Intern}{Jul 2024 -- Sep 2024}
+      {PTG Energy Group}{Bangkok, Thailand}
+      \resumeItemListStart
+      \resumeItem{Engineered Flutter frontend for enterprise tools (fleet management system, work permit system)}
+      \resumeItem{Optimized back-end TypeScript algorithms to load data from MySQL server, observing 3x speed-up}
+      \resumeItem{Coordinated with other interns to create high-impact graphics and marketing material}
+        % \resumeItem{Developed React/NextJS website to support seed funding for commercialization of the robotic system.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Web Developer}{Dec 2020 -- Mar 2022}
+      {Department of Industrial Works}{Bangkok, Thailand}
+      \resumeItemListStart
+        \resumeItem{Coded full-stack safety checklist app (Flutter, NodeJS, MySQL) as part of \$119,000 contract}
+        \resumeItem{Collaborated with occupational health \& safety professionals to ensure data accuracy}
+    \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Leadership \& Involvement}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+        {Team Lead, Brain-Computer Interface}{Sep 2023 - Jun 2024}
+        {CruX at UCLA}{Los Angeles, CA}
+        \resumeItemListStart
+            \resumeItem{Led a team of 20 engineers to conduct study on improving concentration using binaural beats}
+            \resumeItem{Prototyped a ML algorithm and app to process EEG signals; presented at California Neurotech Conference 2024}
+        \resumeItemListEnd
+
+        \resumeSubheading
+        {Lead Engineer, Command \& Data Handling Team}{Feb 2023 - Mar 2024}
+        {Bruin Spacecraft Group at UCLA}{Los Angeles, CA}
+        \resumeItemListStart
+            \resumeItem{Headed team of 18 engineers in a startup-like engineering environment; taught and mentored students}
+            \resumeItem{Wrote mission-critical flight software (C, Python, F Prime) and electronics hardware for cube satellite}
+            \resumeItem{Programmed SAMD51s, TI MCUs and other embedded systems; designed and soldered PCBs with reliability}
+        \resumeItemListEnd
+
+        \resumeSubheading
+        {Lead Engineer, Avionics}{Sep 2023 - Jan 2024}
+        {Rocket Project at UCLA}{Los Angeles, CA}
+        \resumeItemListStart
+            \resumeItem{Worked with team of 12 engineers to build avionics, PCBs, and other electronic components for rocket}
+        \resumeItemListEnd
+
+        \resumeProjectHeading
+        {Other Projects}{}
+        \resumeItemListStart
+            \resumeItem{Made programming language and recursive descent parser in C; compiles to x86-64 assembly}
+            \resumeItem{Created Boeing 777-300ER flight simulator in C++; downloaded by 50,000+ people. Received Boeing Scholarship}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C, C++, C\#, Python, Java, HTML, CSS, JavaScript, TypeScript, React, SQL, Dart} \\
+     \textbf{Frameworks/Libraries}{: PyTorch, TensorFlow, NodeJS, NextJS, Flask, MySQL, PostgreSQL, Flutter, LangChain} \\
+     \textbf{Developer Tools}{: Git, Docker, AWS (RDS, S3, EC2), VS Code, Visual Studio, Figma, Linux (Ubuntu)} \\
+     \textbf{Relevant Coursework}{: Operating Systems, Algorithm Design, Theoretical CS, Computer Vision ML, Electromagnetics, x86 assembly, Statistics, Circuits} \\
+     \textbf{Hackathons}{: 3rd place of 220 teams at LA Hacks 2025, finalist (top 8 of 100 teams) at LA Tech Week 2024} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
